@@ -34829,7 +34829,7 @@ k=A.aft(new A.Wb(B.f4,q).bM(l).a)
 q=this.a
 q===$&&A.b()
 j=A.ar(["Content-Type","application/json","x-app-platform",s,"x-app-nonce",p,"x-app-client-app","webApp","x-app-timestamp",o,"x-app-signature",k,"x-app-app-version",q],i,i)
-j.m(0,"authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjc5OTk4MDM5LCJleHAiOjE2ODI1OTAwMzl9.TWqomkJWCK_MlJQsB9JYg3yNcFM2BUuTHy9WeCt3xWw")
+j.m(0,"authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjgwMDA2OTEzLCJleHAiOjE2ODI1OTg5MTN9.HXcw4ia4ACI7qCqTIrB7D4zD-xnP6JNnZrjXqpZ2Fo8")
 return j}}
 A.tH.prototype={
 ag(){return new A.K_(B.j)}}
