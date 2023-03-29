@@ -31,31 +31,51 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <title>app_coffee_shop</title>
   <link rel="manifest" href="manifest.json">
 
+  <style>
+    lottie-player {
+      margin: 0 auto;
+    }
+  </style>
+
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2397488419';
+    var serviceWorkerVersion = '2010725558';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 
 <body>
+  <center>
+    <div id="loading">
+  </center>
+  <lottie-player src="test.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+    autoplay></lottie-player>
+  </div>
+
   <script>
     window.addEventListener('load', function (ev) {
-      // Download main.dart.js
+      var loading = document.querySelector('#loading');
+      // loading.textContent = "Loading entrypoint...";
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: function (engineInitializer) {
-          engineInitializer.initializeEngine().then(function (appRunner) {
-            appRunner.runApp();
-          });
+        onEntrypointLoaded: async function (engineInitializer) {
+          await engineInitializer.autoStart();
         }
+        // onEntrypointLoaded: async function (engineInitializer) {
+        //   loading.textContent = "Initializing engine...";
+        //   let appRunner = await engineInitializer.initializeEngine();
+
+        //   loading.textContent = "Running app...";
+        //   await appRunner.runApp();
+        // }
       });
     });
   </script>
