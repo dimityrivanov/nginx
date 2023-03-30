@@ -40,11 +40,32 @@
     lottie-player {
       margin: 0 auto;
     }
+
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+
+    .parent {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    .child {
+      background: red;
+      height: 50px;
+      width: 50px;
+    }
   </style>
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '429844755';
+    var serviceWorkerVersion = '3285154222';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -52,10 +73,12 @@
 
 <body>
   <center>
-    <div id="loading">
+    <div id="loading"></div>
   </center>
-  <lottie-player src="test.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop
-    autoplay></lottie-player>
+  <div class="parent">
+    <!-- <div class="child"> -->
+    <lottie-player class="child" src="test.json" background="transparent" speed="1" style="width: 300px; height: 300px;"
+      loop autoplay></lottie-player>
   </div>
 
   <script>
