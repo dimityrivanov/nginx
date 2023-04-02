@@ -4,60 +4,60 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "c20bfd7bf9334e1c75e414d8dce56954",
-"index.html": "86543b5bb031962a4f495b577ded862e",
-"/": "86543b5bb031962a4f495b577ded862e",
-"main.dart.js": "487a38ec736c83f1d92fb53c11265e95",
-"flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
-"test.json": "9df1201916d383b2c552b655fe03d573",
-"lottie_player.json": "a63919e74ff88d0406fcd3270a412b16",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
-"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "b04f11969d7486b483d921e4fc9584df",
-"main.dart.js_1.part.js": "859a7e637287692355c2e8b7f8955496",
-"main.dart.js_3.part.js": "4657545fc0f90bfdfd8d9c63135b906e",
-"assets/AssetManifest.json": "d98de6df53f1a91024f8ed47531c2dd3",
-"assets/NOTICES": "862343c35f449cfd3fdd7fdb4468686e",
-"assets/FontManifest.json": "3020802906dc520f88ca973c65aa46d8",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/packages/quickalert/assets/confirm.gif": "bdc3e511c73e97fbc5cfb0c2b5f78e00",
-"assets/packages/quickalert/assets/error.gif": "c307db003cf53e131f1c704bb16fb9bf",
-"assets/packages/quickalert/assets/success.gif": "dcede9f3064fe66b69f7bbe7b6e3849f",
-"assets/packages/quickalert/assets/loading.gif": "ac70f280e4a1b90065fe981eafe8ae13",
-"assets/packages/quickalert/assets/info.gif": "90d7fface6e2d52554f8614a1f5deb6b",
-"assets/packages/quickalert/assets/warning.gif": "f45dfa3b5857b812e0c8227211635cc4",
-"main.dart.js_2.part.js": "962b34d145b9dc966a7d1f9785563e27",
-"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
-"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
-"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
-"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e"
+  "index.html": "090825942c4455cca64d60acb601d636",
+  "/": "090825942c4455cca64d60acb601d636",
+  "main.dart.js": "04ff7932742c2718fbf55911c06d4d6b",
+  "flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
+  "test.json": "9df1201916d383b2c552b655fe03d573",
+  "lottie_player.json": "a63919e74ff88d0406fcd3270a412b16",
+  "favicon.png": "5dcef449791fa27946b3d35ad8803796",
+  "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+  "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
+  "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+  "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+  "manifest.json": "b04f11969d7486b483d921e4fc9584df",
+  "main.dart.js_1.part.js": "4b4e3d9674645317caf52a0c4522b298",
+  "main.dart.js_3.part.js": "a04b75f9b2ba65ee9d27ea214175510c",
+  "assets/AssetManifest.json": "d98de6df53f1a91024f8ed47531c2dd3",
+  "assets/NOTICES": "862343c35f449cfd3fdd7fdb4468686e",
+  "assets/FontManifest.json": "3020802906dc520f88ca973c65aa46d8",
+  "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+  "assets/packages/quickalert/assets/confirm.gif": "bdc3e511c73e97fbc5cfb0c2b5f78e00",
+  "assets/packages/quickalert/assets/error.gif": "c307db003cf53e131f1c704bb16fb9bf",
+  "assets/packages/quickalert/assets/success.gif": "dcede9f3064fe66b69f7bbe7b6e3849f",
+  "assets/packages/quickalert/assets/loading.gif": "ac70f280e4a1b90065fe981eafe8ae13",
+  "assets/packages/quickalert/assets/info.gif": "90d7fface6e2d52554f8614a1f5deb6b",
+  "assets/packages/quickalert/assets/warning.gif": "f45dfa3b5857b812e0c8227211635cc4",
+  "main.dart.js_2.part.js": "5ebe9a76c931f627855e52abf98ed554",
+  "canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
+  "canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
+  "canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
+  "canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = [
-  "main.dart.js",
-"index.html",
-"assets/AssetManifest.json",
-"assets/FontManifest.json"];
-// During install, the TEMP cache is populated with the application shell files.
-self.addEventListener("install", (event) => {
-  self.skipWaiting();
-  return event.waitUntil(
-    caches.open(TEMP).then((cache) => {
-      return cache.addAll(
-        CORE.map((value) => new Request(value, {'cache': 'reload'})));
-    })
-  );
-});
+// const CORE = [
+//   "main.dart.js",
+// "index.html",
+// "assets/AssetManifest.json",
+// "assets/FontManifest.json"];
+// // During install, the TEMP cache is populated with the application shell files.
+// self.addEventListener("install", (event) => {
+//   self.skipWaiting();
+//   return event.waitUntil(
+//     caches.open(TEMP).then((cache) => {
+//       return cache.addAll(
+//         CORE.map((value) => new Request(value, {'cache': 'reload'})));
+//     })
+//   );
+// });
 
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
-self.addEventListener("activate", function(event) {
-  return event.waitUntil(async function() {
+self.addEventListener("activate", function (event) {
+  return event.waitUntil(async function () {
     try {
       var contentCache = await caches.open(CACHE_NAME);
       var tempCache = await caches.open(TEMP);
@@ -135,8 +135,34 @@ self.addEventListener("fetch", (event) => {
     return onlineFirst(event);
   }
   event.respondWith(caches.open(CACHE_NAME)
-    .then((cache) =>  {
+    .then((cache) => {
       return cache.match(event.request).then((response) => {
+
+        if (response) {
+          return response;
+        }
+
+        if (IN_PROCESSING_REQUESTS[key]) {
+          return IN_PROCESSING_REQUESTS[key].clone();
+        }
+
+        return fetch(event.request).then((response) => {
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+            cache.put(event.request, response.clone())
+              .then(() => delete IN_PROCESSING_REQUESTS[key]);
+          }
+
+          IN_PROCESSING_REQUESTS[key] = response.clone();
+          return response;
+        });
+
+
+
+
+
+
+
         // Either respond with the cached resource, or perform a fetch and
         // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {

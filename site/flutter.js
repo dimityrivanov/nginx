@@ -77,7 +77,7 @@ _flutter.loader = null;
       ];
       if (window.trustedTypes) {
         this.policy = trustedTypes.createPolicy(policyName, {
-          createScriptURL: function(url) {
+          createScriptURL: function (url) {
             const parsed = new URL(url, window.location);
             const file = parsed.pathname.split("/").pop();
             const matches = patterns.some((pattern) => pattern.test(file));
@@ -367,7 +367,15 @@ _flutter.loader = null;
       // Install the `didCreateEngineInitializer` listener where Flutter web expects it to be.
       this.didCreateEngineInitializer =
         entrypointLoader.didCreateEngineInitializer.bind(entrypointLoader);
-      return entrypointLoader.loadEntrypoint(entrypoint);
+
+      const main = entrypointLoader.loadEntrypoint(entrypoint);
+
+      fetch("assets/FontManifest.json");
+      // fetch("assets/fonts/MaterialIcons-Regular.otf");
+      fetch("assets/packages/cupertino_icons/assets/CupertinoIcons.ttf");
+      fetch("/");
+
+      return main;
     }
   }
 
