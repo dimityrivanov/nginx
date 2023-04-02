@@ -367,15 +367,7 @@ _flutter.loader = null;
       // Install the `didCreateEngineInitializer` listener where Flutter web expects it to be.
       this.didCreateEngineInitializer =
         entrypointLoader.didCreateEngineInitializer.bind(entrypointLoader);
-
-      const main = entrypointLoader.loadEntrypoint(entrypoint);
-
-      fetch("assets/FontManifest.json");
-      // fetch("assets/fonts/MaterialIcons-Regular.otf");
-      fetch("assets/packages/cupertino_icons/assets/CupertinoIcons.ttf");
-      fetch("/");
-
-      return main;
+      return entrypointLoader.loadEntrypoint(entrypoint);
     }
   }
 
