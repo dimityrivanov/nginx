@@ -53,6 +53,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: opacity .4s ease-out;
     }
 
 
@@ -65,31 +66,34 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3093263310';
+    var serviceWorkerVersion = '3287354379';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 
 <body>
-  <center>
-    <div id="loading"></div>
-  </center>
-  <div class="parent">
+  <div class="parent" id="loader-content">
     <!-- <div class="child"> -->
-    <lottie-player src="test.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop
-      autoplay></lottie-player>
+    <lottie-player src="test.json" background="transparent" speed="1" loop autoplay></lottie-player>
   </div>
 
   <script>
+    function delay(time) {
+      return new Promise(resolve => setTimeout(resolve, time));
+    }
+
+
     window.addEventListener('load', function (ev) {
-      var loading = document.querySelector('#loading');
-      // loading.textContent = "Loading entrypoint...";
+      var loadedContent = document.querySelector('#loader-content');
+
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
         onEntrypointLoaded: async function (engineInitializer) {
+          loadedContent.style.opacity = '0';
+          await delay(400);
           await engineInitializer.autoStart();
         }
         // onEntrypointLoaded: async function (engineInitializer) {
