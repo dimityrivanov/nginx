@@ -66,7 +66,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3287354379';
+    var serviceWorkerVersion = '2246791277';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -74,6 +74,7 @@
 
 <body>
   <div class="parent" id="loader-content">
+    <!-- <div class="child"> -->
     <lottie-player src="test.json" background="transparent" speed="1" loop autoplay></lottie-player>
   </div>
 
@@ -91,9 +92,9 @@
           serviceWorkerVersion: serviceWorkerVersion,
         },
         onEntrypointLoaded: async function (engineInitializer) {
-          // await delay(400);
-          await engineInitializer.autoStart();
           loadedContent.style.opacity = '0';
+          await delay(400);
+          await engineInitializer.autoStart();
         }
         // onEntrypointLoaded: async function (engineInitializer) {
         //   loading.textContent = "Initializing engine...";
