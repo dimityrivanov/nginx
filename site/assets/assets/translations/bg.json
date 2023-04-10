@@ -3,5 +3,10 @@
 "choose_language": "Избор на език:",
 "cart": "Количка",
 "cart_total": "Тотал",
-"cart_finalize": "Завърши поръчката"
+"cart_finalize": "Завърши поръчката",
+"profile": "Профил",
+"profile_user": "Потребител",
+"profile_email": "Email",
+"profile_sign_out": "Излез от профила",
+"profile_close": "Затвори"
 }

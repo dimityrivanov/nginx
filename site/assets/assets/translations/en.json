@@ -3,5 +3,10 @@
     "choose_language":"Choose language:",
     "cart":"Cart",
     "cart_total":"Total",
-    "cart_finalize":"Finalize"
+    "cart_finalize":"Finalize",
+    "profile": "Profile",
+    "profile_user": "User",
+    "profile_email": "Email",
+    "profile_sign_out": "Sign out",
+    "profile_close": "Close"
  }
